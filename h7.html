@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            반복문
+        </title>
+    </head>
+    <body>
+        <script>
+
+            var sum = 0, num = 0;
+            var st,fi,ss;
+
+            st = parseInt(prompt("초기값을 입력하세요 : ","0"));
+            fi = parseInt(prompt("최종값을 입력하세요 :","0"));
+            ss = parseInt(prompt("배수를 입력하세요 :","0"));
+
+            i=st;
+            while(i<=fi){
+                if(i%ss==0) {
+                    num+=1;
+                    sum+=i;
+                    document.write(i+" ");
+                }
+                i++;
+            }
+            document.write("<br>"+ss+"의 배수의 개수는"+num+"이고,");
+            document.write("<br>"+ss+"의 배수의 합은"+sum+"입니다.");
+
+        </script>
+    </body>
+</html>
